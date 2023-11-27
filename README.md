@@ -15,7 +15,8 @@ stuff.
 
 ## Example
 
-- This is the source file in Markdown: [letter.md](letter.md)
+- This is the source file in Markdown:
+  [letter.md](https://raw.githubusercontent.com/bast/quarto-letter-template/main/letter.md)
 - And this is how the generated PDF looks: [letter.pdf](letter.pdf)
 
 
