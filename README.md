@@ -12,6 +12,13 @@ stuff.
 - Example logo from https://logoipsum.com/.
 
 
+
+## Example
+
+- This is the source file in Markdown: [letter.md](letter.md)
+- And this is how the generated PDF looks: [letter.pdf](letter.pdf)
+
+
 ## How to build the PDF
 
 ```console
