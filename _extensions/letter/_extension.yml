@@ -1,0 +1,11 @@
+title: Letter template
+author: Radovan Bast
+version: 0.1.0
+contributes:
+  formats:
+    pdf:
+      template: template.tex
+      pdf-engine: pdflatex
+      format-resources:
+        - logo.png
+        - signature.png

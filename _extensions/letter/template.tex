@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{letter}
+
+% https://tex.stackexchange.com/a/257464
+\def\tightlist{}
+
+\usepackage{bera}
+\usepackage{fontawesome}
+
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=2cm, left=2cm, right=2cm}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    }
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\date{\today}
+
+\begin{document}
+
+\begin{textblock}{4}(2,1)
+  \includegraphics[height=25mm]{logo.png}
+\end{textblock}
+
+\begin{letter}{$for(address)$$address$$sep$\\$endfor$}
+
+$if(opening)$
+  \opening{\textbf{$subject$} \\[1.0cm] $opening$}
+$else$
+  \opening{\textbf{$subject$} \\}
+$endif$
+
+\setstretch{$spacing$}
+
+$body$
+
+\vspace{10mm}
+
+\closing{
+  $closing$
+  \includegraphics[height=1.5cm]{signature.png}
+}
+
+\begin{textblock}{10}(2.0,26.0)
+  \fontsize{9}{8}
+  \selectfont \sffamily
+  \color[gray]{0.4}
+  \begin{tabular}{@{}l@{}}
+    Dr \textbf{Jane Doe} \\
+    Example Street 123 \\
+    12345 Example City \\[0.15cm]
+    \faicon{envelope} jane.doe@example.org
+      \quad
+    \faicon{phone} +12 34567890
+      \quad
+    \faicon{home} example.org
+  \end{tabular}
+\end{textblock}
+
+\end{letter}
+
+\end{document}
