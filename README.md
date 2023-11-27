@@ -25,3 +25,19 @@ stuff.
 ```console
 $ quarto render letter.md
 ```
+
+
+## Meaning of the files
+
+```
+├── _extensions
+│   └── letter                <- you can rename it but then also rename it inside letter.md
+│       ├── _extension.yml    <- here you define which files are needed
+│       ├── logo.png
+│       ├── signature.png
+│       └── template.tex      <- here you define the layout in LaTeX
+├── letter.md                 <- you write this
+├── letter.pdf                <- quarto generates this
+├── LICENSE
+└── README.md
+```
