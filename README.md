@@ -10,3 +10,10 @@ stuff.
 - https://github.com/numbats/monash-quarto-letter used as inspiration but not used
   directly since it looked too sophisticated to me.
 - Example logo from https://logoipsum.com/.
+
+
+## How to build the PDF
+
+```console
+$ quarto render letter.md
+```
