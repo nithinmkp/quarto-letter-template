@@ -1,2 +1,1 @@
-# quarto-letter-template
-Quarto letter template example
+# [Quarto](https://quarto.org/) letter template example
