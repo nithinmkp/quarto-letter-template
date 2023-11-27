@@ -46,3 +46,6 @@ The `_extensions` part you can reuse across letters. The idea is that the
 extension defines all that is common for all your letters (logo, address,
 layout). You can also share your extensions via [Quarto](https://quarto.org/)
 (but I haven't tried it yet).
+
+You can modify [template.tex](_extensions/letter/template.tex) to your heart's
+content but it requires some know-how in LaTeX.
