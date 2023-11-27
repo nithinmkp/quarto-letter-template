@@ -41,3 +41,8 @@ $ quarto render letter.md
 ├── LICENSE
 └── README.md
 ```
+
+The `_extensions` part you can reuse across letters. The idea is that the
+extension defines all that is common for all your letters (logo, address,
+layout). You can also share your extensions via [Quarto](https://quarto.org/)
+(but I haven't tried it yet).
