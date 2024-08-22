@@ -8,6 +8,8 @@ opening: Dear Susan,
 closing: Best regards
 spacing: 1.0
 format: letter-pdf
+date: 03/07/2005
+date-format: long
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

@@ -1,36 +1,36 @@
 \documentclass[11pt,a4paper]{letter}
 
-% https://tex.stackexchange.com/a/257464
 \def\tightlist{}
 
 \usepackage{bera}
 \usepackage{fontawesome}
-
 \usepackage{setspace}
 \usepackage{geometry}
 \geometry{a4paper, top=3cm, bottom=2cm, left=2cm, right=2cm}
 
 \usepackage{graphicx}
-
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    }
+}
 
 \usepackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
 
-\date{\today}
+% Conditional date setting
+\date{$if(date)$$date$$else$\today$endif$}
 
 \begin{document}
 
-\begin{textblock}{4}(2,1)
-  \includegraphics[height=25mm]{logo.png}
-\end{textblock}
+% Center the logo at the top
+\begin{textblock*}{0cm}(0.5\textwidth, 2cm)
+  \noindent
+  \includegraphics[height=25mm]{logo.png} % Adjust the height as needed
+\end{textblock*}
 
 \begin{letter}{$for(address)$$address$$sep$\\$endfor$}
 
@@ -50,7 +50,6 @@ $body$
   $closing$
   \includegraphics[height=1.5cm]{signature.png}
 }
-
 \begin{textblock}{10}(2.0,26.0)
   \fontsize{9}{8}
   \selectfont \sffamily
@@ -66,6 +65,7 @@ $body$
     \faicon{home} example.org
   \end{tabular}
 \end{textblock}
+
 
 \end{letter}
 
